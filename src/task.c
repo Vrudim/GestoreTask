@@ -10,7 +10,9 @@ void aggiungiTask(Task tasks[], int *nrTask){
 	tasks[*nrTask].id = *nrTask +1;
 
 	printf("Task: ");
-	scanf("%[^\n]", tasks[*nrTask].nome);
+	scanf(" %[^\n]", tasks[*nrTask].nome);
+
+	tasks[*nrTask].completata = 0;
 
 	(*nrTask)++;
 }
@@ -25,7 +27,16 @@ void completaTask(Task tasks[], int nrTask){
 }
 
 void listaTask(Task tasks[], int nrTask){
+    if (nrTask == 0) {
+        printf("Nessun task presente.\n\n");
+        return;
+    }
 
+    printf("-------------------\n");
+    for (int i = 0; i < nrTask; i++) {
+        printf("[%d] %s - %s\n", tasks[i].id, tasks[i].nome, tasks[i].completata ? "Completato" : "Da Fare");
+    printf("-------------------\n\n");
+    }
 }
 
 void salvaSuFile(Task tasks[], int nrTask){

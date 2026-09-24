@@ -2,13 +2,13 @@
 #include "task.h"
 
 void menu(){
-    printf("1. Aggiungi Task\n");
-    printf("2. Cancella Task\n");
-	printf("3. Completa Task\n");
-    printf("4. Lista Task\n");
-    printf("5. Salva su File\n");
-    printf("6. Carica da File\n");
-    printf("0. Esci\n");
+    printf("1) Aggiungi Task\n");
+    printf("2) Cancella Task\n");
+	printf("3) Completa Task\n");
+    printf("4) Lista Task\n");
+    printf("5) Salva su File\n");
+    printf("6) Carica da File\n");
+    printf("0) Esci\n");
 }
 
 int main() {

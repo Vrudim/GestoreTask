@@ -6,7 +6,7 @@
 typedef struct {
 	int id;
 	char nome[100];
-	int comletato = 0;
+	int completata;
 } Task;
 
 void aggiungiTask(Task tasks[], int *nrTask);
