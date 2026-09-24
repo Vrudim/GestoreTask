@@ -20,7 +20,6 @@ int main() {
 		menu();
 		printf("Scegli Operazione: ");
 		scanf("%d", &scelta);
-		
 		switch(scelta) {
 			case 1:
 				aggiungiTask(tasks, &nrTask);
